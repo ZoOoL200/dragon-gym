@@ -1,0 +1,51 @@
+
+body{margin: 0; padding: 0; background-color: whitesmoke;}
+#select_table{
+    width: 20%; height: 40px; text-align: center; font-size: 28px;
+    background-color:rgb(214, 204, 204); font-weight: bold; outline: none; border-radius: 5px 5px 5px 5px;
+    margin-top: 20px;
+}
+#select_table option{background-color: whitesmoke; color-scheme: dark;}
+#info{float: right; width: 25%; direction: rtl; text-align: center; border: 2px solid black; margin-right: 10px;
+    background-color:  rgb(179, 201, 250); margin-top: 30px; border-radius: 7px; box-shadow: 1px 1px 20px gray; }
+#info h1 { font-size: 38px; margin-top: -5px;}
+#year{outline: none; text-align:center;font-size: large;font-weight: bold; width: 40%; height:25px;}
+#select_month{    width: 60%; height: 30px; text-align: center; font-size: 20px;
+    background-color:rgb(214, 204, 204); font-weight: bold; outline: none; border-radius: 5px 5px 5px 5px;
+    margin-top: 20px;}
+#date{outline: none; text-align:center;font-size: large;font-weight: bold; width: 40%; height:25px;}
+#info form button{display: block; margin-top: 10px; width: 30%; height: 30px; font-weight: bold;
+font-size: 20px;}
+#info form div { background-color:beige;}
+#info form label {font-weight: bold;   } 
+.details_input{ margin-top: 20px;  margin-right: 50px;  outline: none;height: 20px; text-align: center; font-weight: bold; 
+                border-radius: 5px; 
+              }
+
+#info form input::-webkit-outer-spin-button,#info form input::-webkit-inner-spin-button{-webkit-appearance: none; }
+.details_input::-webkit-outer-spin-button, .details_input::-webkit-inner-spin-button{-webkit-appearance: none;}
+
+#monthily input , #daily input , #exp input , #proft input{height: 20px; outline: none; text-align: center; font-weight: bold;
+                                                            border-radius: 5px; box-shadow: 1px 1px 7px gray;}
+#main {float: left; height: 173vh; width: 65%;   margin-top: 20px; border-collapse: collapse; margin-left: 10px; text-align: center; border: 2px double black;
+overflow:scroll; overflow-x: hidden;  background-color: whitesmoke;  border-radius: 10px;}
+#main::-webkit-scrollbar{width: 10px;}
+#main table , #main th , #main td {border: 2px solid black; padding: 10px; border-collapse: collapse;
+    text-align: center;}
+#main caption{font-size: x-large; font-weight: bold; background-color: rgb(173, 173, 173);  border: 2px solid black; border-radius: 5px 5px 0 0;}
+#main center{ margin-left: 10px;width: 98%; margin-bottom: 130px; border: 1px solid black; border-collapse: collapse; box-shadow: 1px 1px 20px gray; border-radius: 5px 5px 5px 5px;}
+#main table {width: 100%; }
+#main td:nth-child(odd) , #main th:nth-child(odd){background-color: rgb(179, 201, 250);}
+#main td:nth-child(even),#main th:nth-child(even){background-color: beige;}
+@media only screen and (max-width:1000px)
+    { #info { width: 98%; margin-right: 1%;  }
+    #main { width: 98%; overflow-x: auto; height: 90vh; margin-left:1%;}
+    #select_table{ width: 60%;}
+    #main center{width:880px; margin-left: 7px; margin-right: 7px; margin-top: 10px;}
+    #main table {width: 100%;}
+    #main table , #main th , #main td {padding: 0px;}
+    #main::-webkit-scrollbar{width: 0px;}
+
+    }
+
+
