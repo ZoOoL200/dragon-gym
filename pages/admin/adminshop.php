@@ -36,11 +36,11 @@ if($_SESSION['id']){?>
                 <div><h3>weghit </h3><input id="name_prod" type="text" name='weghit'></div>
                 <div><h3>Comment </h3><input id="name_product" type="text" name='comment'></div>
                 <div id="category"><h3>category </h3><select id="cate" type="text" name='category' onchange="f_category()">
-                    <option value="تضخيم">تضخيم</option>
-                    <option value="تخسيس">تخسيس</option>
+                    <option value="بناء العضلات">بناء العضلات</option>
+                    <option value="زيادة الوزن">زيادة الوزن</option>
+                    <option value="إنقاص الوزن">إنقاص الوزن</option>
+                    <option value="الطاقة و الفايتمينات">الطاقة و الفايتمينات</option>
                     <option value="مستلزمات رياضية">مسلتزمات رياضية</option>
-                    <option value="القوة و النشاط">القوة و النشاط</option>
-                    <option value="فايتمينات و معادن">فايتمينات و معادن</option>
                 </select>
                 <script> function f_category(){
                     var category= document.getElementById('cate').value ;
