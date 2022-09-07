@@ -45,10 +45,9 @@ function check(){ if($_POST['useer']== "ahmed@dragon.com" && $_POST['pass']=="12
         <div class="contirn"> 
             <h1> Dragon Gym <embed src="./imo/damb.jpg" width="35" > </h1>
                 <nav><ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="shop.html">Shopping</a></li>
+                    <li><a href="home1.html">Home</a></li>
+                    <li><a href="shop.php">Shopping</a></li>
                     <li><a href="admin.php"  class="onit" > Admin</a></li>
-                    <li><a href="client.php">Log in</a></li>
                 </ul></nav>
         </div>
     </header>
