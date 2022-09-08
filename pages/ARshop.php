@@ -31,9 +31,9 @@
         <div class="contirn"> 
             <h1> Dragon Gym <embed src="./imo/damb.jpg" width="35" > </h1>
                 <nav><ul>
-                    <li><a href="home1.html" >Home</a></li>
-                    <li><a href="shop.php" class="onit">Shopping</a></li>
-                    <li><a href="admin.php"  target="_self"> Admin</a></li>
+                <li><a href="ARhome.html" class="onit">الصفحة الرئيسية</a></li>
+                    <li><a href="ARshop.php">المتجر</a></li>
+                    <li><a href="ARadmin.php"  target="_self"> المسؤول</a></li>
                 </ul></nav>
         </div>
     </header>
@@ -43,7 +43,7 @@
             <button name="musel-bulid">
                 <div class="category-image"> <img src="./imo/musel-removebg-preview.jpg" ></div>
             </button>
-            <a href="?musel-bulid="> Musel <br> Bulid</a>
+            <a href="?musel-bulid="> بناء <br> العضلات</a>
         </div>
 
 
@@ -51,28 +51,28 @@
             <button name="weight-loss">
                 <div class="category-image"> <img src="./imo/whigh loss-removebg-preview-removebg-preview.jpg" ></div>
             </button>
-            <a href="?weight-loss="> Weight <br> Loss</a>
+            <a href="?weight-loss="> إنقاص <br> الوزن</a>
         </div>
 
         <div class="category" >
             <button name="increase-weight">
                 <div class="category-image"> <img src="./imo/wight increase-removebg-preview.jpg" ></div>
             </button>
-            <a href="?increase-weight="> Increase <br> Weight </a>
+            <a href="?increase-weight="> زيادة <br> الوزن </a>
         </div>
 
         <div class="category"  style="margin-right:5.2%;">
             <button name="sporting-goods">
                 <div class="category-image"> <img src="./imo/shaker-removebg-preview-removebg-preview.jpg" ></div>
             </button>
-            <a href="?sporting-goods="> Sporting <br> Goods</a>
+            <a href="?sporting-goods="> مستلزمات <br> رياضية</a>
         </div>
 
         <div class="category"  style="margin-right: 35%;">
             <button name="vitamins">
                 <div class="category-image"> <img src="./imo/enrgy-removebg-preview-removebg-preview.jpg" ></div>
             </button>
-            <a href="?vitamins="> & Energy  <br> Vitamins</a>
+            <a href="?vitamins="> الطاقة &  <br> الفايتمينات</a>
         </div>
     </form>
 
@@ -81,7 +81,7 @@
     <?php if(isset($_GET['musel-bulid'])) { ?>
     <div class="cards">
         <div class="category-card">
-            <h1>Muscle Bulid</h1>
+            <h1>بناء العضلات</h1>
         <?php
             include('config.php');
             $result = mysqli_query($con, "SELECT * FROM products");      
@@ -90,9 +90,9 @@
                         <img  height="215" src="admin/<?php echo $row['image']; ?>" alt="">
                         <div class="card-body">
                         <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                        <p class="card-text">Weight <h6><?php echo $row['weghit']; ?></h6></p>
+                        <p class="card-text">الوزن <h6><?php echo $row['weghit']; ?></h6></p>
                         <p class="card-text"><?php echo $row['comment']; ?> </p>
-                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">Book now</a>
+                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">احجز الأن</a>
                         </div><div class="price"><?php echo $row['price']; ?> SDG</div>
                     </div> 
                 </div>
@@ -103,7 +103,7 @@
 
             <?php if (isset($_GET["weight-loss"])) { ?>
             <div class="category-card">
-                <h1>Weight loss</h1>
+                <h1>إنقاص الوزن</h1>
             <?php
             include('config.php');
             $result = mysqli_query($con, "SELECT * FROM products");      
@@ -114,9 +114,9 @@
                         <img  height="215" src="admin/<?php echo $row['image']; ?>" alt="">
                         <div class="card-body">
                         <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                        <p class="card-text">Weight <h6><?php echo $row['weghit']; ?></h6></p>
+                        <p class="card-text">الوزن <h6><?php echo $row['weghit']; ?></h6></p>
                         <p class="card-text"><?php echo $row['comment']; ?> </p>
-                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">Book now</a>
+                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">احجز الأن</a>
                         </div><div class="price"><?php echo $row['price']; ?> SDG</div>
                     </div> 
                 </div>
@@ -127,7 +127,7 @@
 
             <?php  if (isset($_GET["increase-weight"])) {    ?>
             <div class="category-card">
-                <h1>Increase Weight</h1>
+                <h1>زيادة الوزن</h1>
             <?php
             include('config.php');
             $result = mysqli_query($con, "SELECT * FROM products");      
@@ -138,9 +138,9 @@
                         <img  height="215" src="admin/<?php echo $row['image']; ?>" alt="">
                         <div class="card-body">
                         <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                        <p class="card-text">Weight <h6><?php echo $row['weghit']; ?></h6></p>
+                        <p class="card-text">الوزن <h6><?php echo $row['weghit']; ?></h6></p>
                         <p class="card-text"><?php echo $row['comment']; ?> </p>
-                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">Book now</a>
+                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">احجز الأن</a>
                         </div><div class="price"><?php echo $row['price']; ?> SDG</div>
                     </div> 
                 </div>
@@ -153,7 +153,7 @@
 
             <?php if (isset($_GET["sporting-goods"])) {  ?>
             <div class="category-card" >
-                <h1>Sporting Goods</h1>
+                <h1>مستلزمات رياضية</h1>
             <?php
             include('config.php');
             $result = mysqli_query($con, "SELECT * FROM products");      
@@ -165,9 +165,9 @@
                         <img  height="215" src="admin/<?php echo $row['image']; ?>" alt="">
                         <div class="card-body">
                         <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                        <p class="card-text">Weight <h6><?php echo $row['weghit']; ?></h6></p>
+                        <p class="card-text">الوزن <h6><?php echo $row['weghit']; ?></h6></p>
                         <p class="card-text"><?php echo $row['comment']; ?> </p>
-                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">Book now</a>
+                        <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">احجز الأن</a>
                         </div><div class="price"><?php echo $row['price']; ?> SDG</div>
                     </div> 
                 </div> 
@@ -178,7 +178,7 @@
 
             <?php if (isset($_GET["vitamins"])) { ?>
             <div class="category-card">
-            <h1>Power & Vitamins</h1> 
+            <h1>الطاقة و الفايتمينات</h1> 
             <?php
             include('config.php');
             $result = mysqli_query($con, "SELECT * FROM products");      
@@ -189,9 +189,9 @@
                             <img  height="215" src="admin/<?php echo $row['image']; ?>" alt="">
                             <div class="card-body">
                             <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                            <p class="card-text">Weight <h6><?php echo $row['weghit']; ?></h6></p>
+                            <p class="card-text">الوزن <h6><?php echo $row['weghit']; ?></h6></p>
                             <p class="card-text"><?php echo $row['comment']; ?> </p>
-                            <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">Book now</a>
+                            <a href="https://api.whatsapp.com/send/?phone=249907859091&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">احجز الأن</a>
                             </div><div class="price"><?php echo $row['price']; ?> SDG</div>
                         </div> 
                     </div>
@@ -210,7 +210,7 @@
 <footer >
     <h3 >Dragon Gym &copy;</h3>
     <div class="foot-loc">
-        <h1 style="font-size:large ; ">About</h1>
+        <h1 style="font-size:large ; ">حول</h1>
         <div class="foot-img"> 
         <img style="width:100% ;" src="./imo/footer.jpg" >
         </div>
@@ -223,10 +223,10 @@
         </div>
     </div>
     <div class="soical">
-        <h1 style="font-size:large ;  margin-bottom:20px;">Social media</h1>
+        <h1 style="font-size:large ;  margin-bottom:20px;">وسائل التواصل الإجتماعي</h1>
         <a href="https://twitter.com/home" target="_blank"><button title="Twitter">t</button></a>
         <a href="https://www.facebook.com/" target="_blank"><button title="Facebook">f</button></a>
-        <div  style="text-align:right; margin-right:30px; margin-top:80px;"> <a style="font-size:x-large; color:black; " href="./ARshop.php"> اللغة العربية</a> </div>
+        <div  style="text-align:right; margin-right:30px; margin-top:80px;"> <a style="font-size:x-large; color:black; " href="./shop.php">English</a> </div>
     </div>
    
 </footer>

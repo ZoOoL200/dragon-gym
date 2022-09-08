@@ -138,3 +138,6 @@
     .sub_table p {font-size: large; }
     .table {width: 80%; margin-top: 20px; font-size: large; background-color: rgb(138, 137, 137); text-align: center;}
     .table , .table tr , .table td {border: 2px solid black; color: #ffffff; direction: ltr; text-align: center;}
+    @media only screen and (max-width:1000px){
+        .card{ width: 14rem; }}
+        

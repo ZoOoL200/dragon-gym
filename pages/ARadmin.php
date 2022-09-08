@@ -45,9 +45,9 @@ function check(){ if($_POST['useer']== "ahmed@dragon.com" && $_POST['pass']=="12
         <div class="contirn"> 
             <h1> Dragon Gym <embed src="./imo/damb.jpg" width="35" > </h1>
                 <nav><ul>
-                    <li><a href="home1.html">Home</a></li>
-                    <li><a href="shop.php">Shopping</a></li>
-                    <li><a href="admin.php"  class="onit" > Admin</a></li>
+                <li><a href="ARhome.html" class="onit">الصفحة الرئيسية</a></li>
+                    <li><a href="ARshop.php">المتجر</a></li>
+                    <li><a href="ARadmin.php"  target="_self"> المسؤول</a></li>
                 </ul></nav>
         </div>
     </header>
@@ -55,11 +55,11 @@ function check(){ if($_POST['useer']== "ahmed@dragon.com" && $_POST['pass']=="12
     <center id="photo"><img src="./imo/dragon.png" ></center>
         <section id="main">
             <div class="contirn" align="center" >
-                <h2>Admin</h2>
+                <h2>المسؤول</h2>
                 <form method="post" action=""> 
                 <input type="email" name="useer" id="useer" placeholder="Email " onfocus='show()' onfocusout="hide()">
                 <input type="password" name="pass"  id="pass" placeholder="password"> 
-                <button type="submit" data-micron="jelly" name="log_in" class="button">Log in</button>
+                <button type="submit" data-micron="jelly" name="log_in" class="button">تسجيل الدخول</button>
                 </form> 
             </div>
             <?php  if(isset($_POST['log_in'])){if (!check()){ echo "<script>Swal.fire({title:'<h1 style=color:red>Wrong</h1>', icon:'erorr', html:'<span style=color:red>wrong password or email</span>', background:'#353637',
@@ -72,7 +72,7 @@ function check(){ if($_POST['useer']== "ahmed@dragon.com" && $_POST['pass']=="12
             <h3>Dragon Gym &copy;</h3>
             <a href="https://twitter.com/home" target="_blank"><button title="Twitter">t</button></a>
             <a href="https://www.facebook.com/" target="_blank"><button title="Facebook">f</button></a>
-            <div  style="text-align:right; margin-right:50px; "> <a style="font-size:x-large; color:black; " href="./ARadmin.php">اللغة العربية</a> </div>
+            <div  style="text-align:right; margin-right:50px; "> <a style="font-size:x-large; color:black; " href="./admin.php">English</a> </div>
             
     </footer>
 </div>
